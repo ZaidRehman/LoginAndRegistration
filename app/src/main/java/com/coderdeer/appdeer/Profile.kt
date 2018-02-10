@@ -34,6 +34,7 @@ class Profile : AppCompatActivity(), ChangePasswordDialog.Listener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
+        mSubscription = CompositeSubscription()
         initViews()
         initSharedPreferences()
         loadProfile()
