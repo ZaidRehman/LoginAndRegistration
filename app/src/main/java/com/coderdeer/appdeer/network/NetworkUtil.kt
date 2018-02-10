@@ -9,12 +9,6 @@ import rx.schedulers.Schedulers
 import okhttp3.OkHttpClient
 
 
-
-/**
- * Created by qureshi on 27/01/18.
- */
-
-
 class NetworkUtil {
 
     companion object {
