@@ -34,6 +34,8 @@ class NetworkUtil {
                 val original = chain.request()
                 val builder = original.newBuilder()
                         .addHeader("Authorization", basic)
+                        .header("Accept","application/json")
+                        .header("Content-Type","application/json")
                         .method(original.method(), original.body())
                 chain.proceed(builder.build())
 
